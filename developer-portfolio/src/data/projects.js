@@ -1,0 +1,53 @@
+// Sources: owner-supplied project descriptions, local Aqua/Operation-Blackout checkouts,
+// and the existing aeron-3d-cv portfolio/CV. Images are existing real site captures.
+// Keep unknown URLs null; do not create demo or repository links from project names.
+export const projects = [
+  {
+    id: 'artikly', title: 'Artikly', category: 'Full stack', eyebrow: 'A space for ideas',
+    description: 'A full-stack publishing platform with a personal writer dashboard and secure, session-based authentication.',
+    image: '/images/projects/artikly.webp', imageAlt: 'Artikly homepage with its Give Your Ideas a Voice headline, article search, and categories',
+    stack: ['React', 'Express.js', 'PostgreSQL'],
+    overview: 'A responsive blogging platform where writers can create, edit, publish, and manage articles, explore blog statistics, and customize their profiles.',
+    features: ['Article publishing and a personalized writer dashboard', 'Protected routes and server-side ownership validation', 'Session authentication, CSRF protection, and rate limiting'],
+    contribution: 'Built the writer dashboard and backend authentication, authorization, and article-management features. Added automated backend and browser regression coverage.',
+    github: null, demo: null,
+  },
+  {
+    id: 'aqua', title: 'Aqua', category: 'Interactive', eyebrow: 'A living underwater world',
+    description: 'An immersive 3D aquascape with animated fish, natural schooling, and playful cursor interactions.',
+    image: '/images/projects/aqua-poster.webp', imageAlt: 'A real capture of Aqua showing fish swimming through an underwater aquascape',
+    stack: ['React', 'Three.js', 'WebGL'],
+    overview: 'A full-screen underwater world built with React, Vite, Three.js, and React Three Fiber, with adaptive rendering quality for desktop and mobile.',
+    features: ['Procedural fish and Boids-style schooling', 'Species-specific steering and cursor/touch responses', 'Shader-driven water and skeletal fish animation'],
+    contribution: 'Built the aquascape, fish behavior, interactive responses, and underwater visuals. Implemented adaptive rendering for different devices.',
+    github: 'https://github.com/Aeronleelucero/AQUA', demo: 'https://aqua-theta-umber.vercel.app/',
+  },
+  {
+    id: 'operation-blackout', title: 'Operation Blackout', category: 'Interactive', eyebrow: 'Enter the Foundry',
+    description: 'A multiplayer browser FPS with a 3D arena, peer-to-peer rooms, and a futuristic command dashboard.',
+    image: '/images/projects/operation-blackout-poster.webp', imageAlt: 'Operation Blackout Foundry dashboard captured from the browser game',
+    stack: ['JavaScript', 'Three.js', 'WebRTC'],
+    overview: 'A browser-based first-person shooter built with JavaScript, Three.js, WebGL, and Vite, with multiplayer rooms powered by WebRTC and PeerJS.',
+    features: ['Peer-to-peer multiplayer room controls', 'Solo training against five bots', 'Responsive Foundry dashboard and loading experience'],
+    contribution: 'Built the browser FPS, 3D arena, multiplayer controls, and solo training. Developed the dashboard and refined its responsive layout and loading behavior.',
+    github: 'https://github.com/Aeronleelucero/Operation-Blackout', demo: 'https://operation-blackout-lake.vercel.app/',
+  },
+  {
+    id: 'qr-attendance', title: 'QR Attendance System', category: 'AI & mobile', eyebrow: 'Built for the real world',
+    description: 'Event-based QR attendance that keeps working offline and synchronizes when connectivity returns.',
+    image: null, stack: ['React Native', 'Laravel', 'SQLite'],
+    overview: 'A mobile attendance application connected to a Laravel web backend, designed around event-based QR scanning and unreliable connectivity.',
+    features: ['QR scanning and scanner authentication', 'Local attendance storage and pending synchronization queue', 'Web-based event, department, and participant management'],
+    contribution: 'Built the mobile app, backend integration, offline SQLite storage, and synchronization recovery. Developed event-management functionality in the web backend.',
+    github: null, demo: null,
+  },
+  {
+    id: 'herd-vision', title: 'HERD-VISION', category: 'AI & mobile', eyebrow: 'Computer vision with purpose',
+    description: 'An AI-assisted system for dairy-cow lameness detection and body-condition scoring.',
+    image: null, stack: ['Python', 'FastAPI', 'YOLOv8'],
+    overview: 'A computer-vision solution developed for NAFAMCO 2026 using YOLOv8 pose estimation and temporal models, packaged as a Windows desktop application.',
+    features: ['Pose-estimation and temporal-model pipeline', 'REST APIs and WebSocket live data streaming', 'Real-time processing and inference monitoring'],
+    contribution: 'Developed the vision pipeline and modular FastAPI backend. Created a React/TypeScript frontend, integrated SQLite, and packaged the application for Windows.',
+    github: null, demo: null,
+  },
+]
